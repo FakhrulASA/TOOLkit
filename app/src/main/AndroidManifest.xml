@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toolkit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Json"></activity>
+        <activity android:name=".medicine" />
+        <activity android:name=".bmi" />
+        <activity android:name=".health" />
+        <activity
+            android:name=".ftinch"
+            android:parentActivityName=".weigth" />
+        <activity
+            android:name=".inmm"
+            android:parentActivityName=".weigth" />
+        <activity
+            android:name=".mtcm"
+            android:parentActivityName=".weigth" />
+        <activity
+            android:name=".milekm"
+            android:parentActivityName=".weigth" />
+        <activity
+            android:name=".rtotaka"
+            android:parentActivityName=".currency" />
+        <activity
+            android:name=".dhtotaka"
+            android:parentActivityName=".currency" />
+        <activity
+            android:name=".ustotaka"
+            android:parentActivityName=".currency" />
+        <activity
+            android:name=".ptokg"
+            android:parentActivityName=".weigthr" />
+        <activity
+            android:name=".ptogm"
+            android:parentActivityName=".weigthr" />
+        <activity
+            android:name=".kggm"
+            android:parentActivityName=".weigthr" />
+        <activity
+            android:name=".ktod"
+            android:parentActivityName=".weigthr" />
+        <activity
+            android:name=".ktof"
+            android:parentActivityName=".tempe" />
+        <activity
+            android:name=".tempe"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".degreetofaren"
+            android:parentActivityName=".tempe" />
+        <activity
+            android:name=".newspaper"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".temp"
+            android:parentActivityName=".converter" />
+        <activity
+            android:name=".weigthr"
+            android:parentActivityName=".converter" />
+        <activity
+            android:name=".currency"
+            android:parentActivityName=".converter" />
+        <activity
+            android:name=".weigth"
+            android:parentActivityName=".converter" />
+        <activity
+            android:name=".holiday"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".calculator"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".converter"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

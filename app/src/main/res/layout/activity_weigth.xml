@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:layout_gravity="center"
+    tools:context=".weigth">
+
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="619dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="80dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="106dp"
+            android:layout_marginBottom="103dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="384dp"
+                android:layout_height="117dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFC107"
+                android:onClick="mkm"
+
+                android:text="MILES  - KM"
+                android:textColor="#FFFFFF"
+
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="129dp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="384dp"
+                android:layout_height="117dp"
+                android:layout_marginBottom="10dp"
+                android:background="#8BC34A"
+                android:onClick="mtkm"
+                android:text="METER - CM"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="384dp"
+                android:layout_height="117dp"
+                android:layout_marginBottom="10dp"
+                android:background="#2196F3"
+                android:onClick="inmm"
+                android:text="INCH - MM"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="246dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="384dp"
+                android:layout_height="117dp"
+                android:layout_marginBottom="10dp"
+                android:background="#F86293"
+                android:onClick="fch"
+                android:text="FOOT - INCH"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="363dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

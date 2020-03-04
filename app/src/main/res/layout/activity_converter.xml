@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".converter">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="144dp">
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="349dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="20dp"
+                android:background="#CEEEB300"
+                android:onClick="T"
+                android:text="TEMPERATURE"
+
+                android:textColor="#ffff"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="199dp" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="349dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="20dp"
+                android:background="#D3F44336"
+                android:onClick="W"
+                android:text="WEIGth"
+
+                android:textColor="#ffff"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="199dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="349dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="20dp"
+                android:background="#D80073FF"
+                android:onClick="C"
+                android:textSize="25sp"
+                android:textColor="#ffff"
+                android:text="CURRENCY"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="349dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="20dp"
+                android:background="#DDC456D8"
+                android:onClick="L"
+                android:textSize="25sp"
+                android:textColor="#ffff"
+                android:text="DISTANCE"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="294dp" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

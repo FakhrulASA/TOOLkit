@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/bg3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculator">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="383dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="543dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="223dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFC107"
+            android:ems="10"
+            android:hint="Enter"
+            android:inputType="number"
+            tools:layout_editor_absoluteY="137dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="52dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:background="#8BC34A"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="89dp" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="223dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFC107"
+            android:ems="10"
+            android:hint="Enter"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="29dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="133dp"
+        android:gravity="clip_horizontal|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.38">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="clip_horizontal|center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="496dp">
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:layout_margin="7dp"
+                android:background="#FF9800"
+                android:onClick="plus"
+                android:text="+"
+                android:textSize="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="257dp" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:layout_margin="7dp"
+                android:background="#FF9800"
+                android:onClick="minus"
+                android:text="-"
+                android:textSize="60dp"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_editor_absoluteY="257dp" />
+
+            <Button
+                android:id="@+id/div"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:layout_margin="7dp"
+                android:background="#FF9800"
+                android:onClick="div"
+                android:text="/"
+                android:textSize="40dp"
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="257dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="clip_horizontal|center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="376dp">
+
+            <Button
+                android:id="@+id/mul"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:layout_margin="7dp"
+                android:background="#FF9800"
+                android:onClick="mul"
+                android:text="*"
+                android:textSize="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="257dp" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:layout_margin="7dp"
+                android:background="#FF9800"
+                android:onClick="per"
+                android:text="%"
+                android:textSize="60dp"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_editor_absoluteY="257dp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:layout_margin="7dp"
+                android:background="#FF9800"
+                android:onClick="cancel"
+                android:text="C"
+                android:textSize="40dp"
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="257dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

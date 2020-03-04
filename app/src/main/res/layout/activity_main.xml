@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        style="@android:style/Widget.Holo.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:foregroundGravity="center"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="161dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="256dp">
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:layout_marginRight="25dp"
+                    android:background="#CD2196F3"
+                    android:onClick="calculator"
+                    android:text="CALCULATOR"
+                    tools:layout_editor_absoluteX="205dp"
+                    tools:layout_editor_absoluteY="152dp" />
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:background="#CC4CAF50"
+
+                    android:onClick="clicks"
+                    android:text="CONVERTER"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="152dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="161dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="64dp">
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:layout_marginRight="25dp"
+                    android:background="#CCF45236"
+                    android:onClick="news"
+                    android:text="NEWS"
+                    tools:layout_editor_absoluteX="205dp"
+                    tools:layout_editor_absoluteY="152dp" />
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:background="#CCDF55F7"
+                    android:text="NUMBERS"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="152dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="161dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="256dp">
+
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:layout_marginRight="25dp"
+                    android:background="#CCFFEB3B"
+                    android:onClick="health"
+                    android:text="HEALTH"
+                    tools:layout_editor_absoluteX="205dp"
+                    tools:layout_editor_absoluteY="152dp" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:background="#CC38C0B3"
+                    android:onClick="holiday"
+                    android:text="HOLIDAYS"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="152dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
